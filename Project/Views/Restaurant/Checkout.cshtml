@@ -1,0 +1,21 @@
+﻿@model CheckoutModel
+
+<div>
+    <div>
+        <h1>You are ordering from '@Model.Restaurant.Name'</h1>
+        <p>Please enter your reservation details</p>
+    </div>
+    <form method="post" action="/restaurant/PostCheckout">
+        <input name="restaurantId" type="number" value="@Model.RestaurantId" hidden/>
+        <label>Customer Name</label>
+        <input name="fullname" type="text" value="@Model.FullName"/>
+        <label>Address</label>
+        <input name="address" type="text" value="@Model.Address" />
+        <label>Reservation Date</label>
+        <input name="reservationDate" type="datetime" value="@Model.ReservationDate" />
+        <button>Submit Reservation</button>
+    </form>
+
+    <a href="/">CANCEL</a>
+    
+</div>

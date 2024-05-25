@@ -1,0 +1,15 @@
+﻿@model HomeViewModel
+
+<div>
+    <h1>Welcome to Homepage</h1>
+    <p>Visit Restaurants</p>
+    @foreach (var restaurant in Model.Restaurants)
+    {
+        <div style="border: 1px solid blue; padding: 10px">
+            <h1>@restaurant.Name</h1>
+            <p>Description: @restaurant.Description</p>
+            <p>Location: @restaurant.Locaton</p>
+            <button onclick="location.href='/restaurant/view/@restaurant.RestaurantId'">View Products</button>
+        </div>
+    }
+</div>

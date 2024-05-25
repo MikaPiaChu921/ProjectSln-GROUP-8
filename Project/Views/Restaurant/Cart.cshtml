@@ -1,0 +1,17 @@
+﻿@model CartViewModel
+<div>
+    <a href="/restaurant/view/@Model.RestaurantId"><- Back</a>
+    <h1>Your orders</h1>
+    <div>
+
+        @foreach(var order in Model.Orders)
+        {
+            <div>
+                <h1>@Model.Products.FirstOrDefault(p => p.ProductId == order.ProductId)?.Name</h1>
+                <p>Quantity: @order.Quantity</p>
+            </div>
+        }
+
+        <button onclick="location.href='/restaurant/checkout/@Model.RestaurantId'">Checkout</button>
+    </div>
+</div>
