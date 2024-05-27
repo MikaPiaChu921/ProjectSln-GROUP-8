@@ -11,19 +11,7 @@
     </nav>
 </header>
 <body>
-<div>
-    
-    <p>Visit Restaurants</p>
-    @foreach (var restaurant in Model.Restaurants)
-    {
-        <div style="border: 1px solid blue; padding: 10px">
-            <h1>@restaurant.Name</h1>
-            <p>Description: @restaurant.Description</p>
-            <p>Location: @restaurant.Locaton</p>
-            <button onclick="location.href='/restaurant/view/@restaurant.RestaurantId'">View Products</button>
-        </div>
-    }
-</div>
+
 
 
 
@@ -45,6 +33,19 @@
         <div class="item">
             <img src="img/5.png">
         </div>
+            <div>
+
+                <p>Visit Restaurants</p>
+                @foreach (var restaurant in Model.Restaurants)
+                {
+                    <div style="border: 1px solid blue; padding: 10px">
+                        <h1>@restaurant.Name</h1>
+                        <p>Description: @restaurant.Description</p>
+                        <p>Location: @restaurant.Locaton</p>
+                        <button onclick="location.href='/restaurant/view/@restaurant.RestaurantId'">View Products</button>
+                    </div>
+                }
+            </div>
     </div>
     <div class="circle">
         LUN DEV YOUTUBE - coding and design website - coding and design website
