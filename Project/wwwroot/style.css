@@ -11,6 +11,7 @@ header{
     box-sizing: border-box;
     position: relative;
     z-index: 10;
+    color: white;
 }
 header nav ul{
     padding: 0;
@@ -19,6 +20,7 @@ header nav ul{
     display: flex;
     gap: 30px;
 }
+
 :root{
     --width-circle: 150vw;
     --radius: calc(100vw / 6);
