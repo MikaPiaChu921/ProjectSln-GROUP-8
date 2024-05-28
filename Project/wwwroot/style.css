@@ -124,7 +124,7 @@ header nav ul{
 
 /* //circle */
 
-.circle{
+.circle {
     pointer-events: none;
     position: absolute;
     top: 0%;
@@ -133,11 +133,8 @@ header nav ul{
     height: 100%;
     -webkit-mask: radial-gradient(var(--radius), transparent 100%, #000);
     mask: radial-gradient(var(--radius), #0000 98%, #000);
-    backdrop-filter: blur(10px);
-    background: radial-gradient( 
-        calc(var(--radius) + 1px), #eee5 100%, #eee2
-    );
-    
+    backdrop-filter: grayscale(50%);
+    background: radial-gradient( calc(var(--radius) + 1px), #eee5 100%, #eee2 );
 }
 .circle span{
     display: block;

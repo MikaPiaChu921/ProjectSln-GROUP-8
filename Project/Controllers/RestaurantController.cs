@@ -32,7 +32,7 @@ namespace Project.Controllers
                 CartSize = GetCartSize("MySession")
             };
             sessionService.RestaurantIdSession.TryAdd("MySession", id);
-            Task.Delay(500);
+            Task.Delay(100);
             return View("Index",model);
         }
 
@@ -44,7 +44,7 @@ namespace Project.Controllers
                 Products = productRepository.GetAll().Where(p => p.RestaurantId == id).ToList(),
                 Orders = GetCart("MySession")
             };
-            Task.Delay(500);
+            Task.Delay(100);
             return View("Cart", model);
         }
 
@@ -55,7 +55,7 @@ namespace Project.Controllers
                 Restaurant = restaurantRepository.Get(id),
                 RestaurantId = id
             };
-            Task.Delay(500);
+            Task.Delay(100);
             return View("Checkout", model);
         }
 
@@ -93,7 +93,7 @@ namespace Project.Controllers
                 ReservationDate = model.ReservationDate,
                 RestaurantName = restaurant.Name,
             };
-            Task.Delay(500);
+            Task.Delay(100);
             return View("Reference", Rmodel);
         }
 

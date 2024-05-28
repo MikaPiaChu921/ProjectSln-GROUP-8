@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Project.Contexts;
 
@@ -11,9 +12,11 @@ using Project.Contexts;
 namespace Project.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20240528132503_Migration9")]
+    partial class Migration9
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -180,42 +183,6 @@ namespace Project.Migrations
                             Price = 100.0,
                             RestaurantId = 3,
                             Stock = 200
-                        },
-                        new
-                        {
-                            ProductId = 7,
-                            Description = "bla bla bla",
-                            Name = "ambot",
-                            Price = 100.0,
-                            RestaurantId = 4,
-                            Stock = 200
-                        },
-                        new
-                        {
-                            ProductId = 8,
-                            Description = "white, dark and milk",
-                            Name = "chocolate",
-                            Price = 100.0,
-                            RestaurantId = 4,
-                            Stock = 200
-                        },
-                        new
-                        {
-                            ProductId = 9,
-                            Description = "bla bla abla",
-                            Name = "ambot",
-                            Price = 100.0,
-                            RestaurantId = 5,
-                            Stock = 200
-                        },
-                        new
-                        {
-                            ProductId = 10,
-                            Description = "white, dark and milk",
-                            Name = "chocolate",
-                            Price = 100.0,
-                            RestaurantId = 5,
-                            Stock = 200
                         });
                 });
 
@@ -289,20 +256,6 @@ namespace Project.Migrations
                             Description = "Enjoy nice food",
                             Locaton = "Tisa",
                             Name = "Aubrey"
-                        },
-                        new
-                        {
-                            RestaurantId = 4,
-                            Description = "Enjoy nice food",
-                            Locaton = "ambot",
-                            Name = "Cyra"
-                        },
-                        new
-                        {
-                            RestaurantId = 5,
-                            Description = "Enjoy nice food",
-                            Locaton = "ambot",
-                            Name = "Paul"
                         });
                 });
 
