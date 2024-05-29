@@ -17,9 +17,16 @@
                 <h1>@prod.Name | Price: PHP @prod.Price</h1>
                 <p>Description: @prod.Description</p>
                 <p>Stocks: @prod.Stock</p>
-                <button class="add-to-cart-btn" onclick="location.href='/restaurant/order?restaurantId=@Model.Restaurant.RestaurantId&productId=@prod.ProductId&quantity=1'">Add to Cart</button>
+                <button class="add-to-cart-btn" onclick="addtocart(@Model.Restaurant.RestaurantId, @prod.ProductId, '@prod.Name')">Add to Cart</button>
 
             </div>
         }
     </div>
 </div>
+
+<script>
+    function addtocart(restaurantId, productId, foodname) {
+        alert(foodname + " was added to order")
+        location.href = '/restaurant/order?restaurantId=' + restaurantId + '&productId=' + productId + '&quantity=1'
+    }
+</script>
