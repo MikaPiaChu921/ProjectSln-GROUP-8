@@ -154,3 +154,89 @@ header nav ul{
         transform: translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg));
     }
 }
+
+/*restaurant*/
+/* Accent: Grieving Daylily */
+:root {
+    --primary-100: #F2F4FF;
+    --primary-200: #C4CFFD;
+    --primary-300: #90A8F1;
+    --primary-400: #587CCF;
+    --primary-500: #234A8C;
+    --primary-600: #0F3A73;
+    --primary-700: #072F59;
+    --primary-800: #032440;
+    --primary-900: #021826;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-100);
+    color: var(--neutral-900);
+}
+
+.Rescontainer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--primary-300);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+}
+
+    .Rescontainer h1, .Rescontainer h3 {
+        color: var(--primary-500);
+    }
+
+.Rescontainer p, .product p {
+    color: var(--neutral-600);
+}
+
+.Rescontainerhr {
+    border: none;
+    border-top: 1px solid var(--neutral-400);
+    margin: 20px 0;
+}
+
+.product {
+    border: 1px solid var(--neutral-400);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: var(--primary-100);
+}
+
+    .product h1 {
+        color: var(--primary-600);
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        margin: 5px 0;
+        color: var(--neutral-700);
+    }
+
+.add-to-cart-btn {
+    background-color: var(--primary-500);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .add-to-cart-btn:hover {
+        background-color: var(--primary-600);
+    }
+
+.back-btn {
+    color: var(--primary-500);
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+}

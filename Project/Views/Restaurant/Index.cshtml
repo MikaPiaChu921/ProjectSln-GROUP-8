@@ -1,21 +1,25 @@
 ﻿@model RestaurantViewProductModel
 
-<div>
-    <a href="/"><- Back</a>
+
+<div class="Rescontainer">
+    <a class="back-btn" href="/" style="text-align: left; display: block;">Back</a>
+    <div style="text-align: right; display: block;">
+        <button class="add-to-cart-btn" onclick="location.href='/restaurant/cart/@Model.Restaurant.RestaurantId'">My Orders (@Model.CartSize)</button>
+    </div>
     <h1>@Model.Restaurant.Name</h1>
     <p>Description: @Model.Restaurant.Description | Located at @Model.Restaurant.Locaton</p>
-    <div>
-        <button onclick="location.href='/restaurant/cart/@Model.Restaurant.RestaurantId'">My Orders(@Model.CartSize)</button>
-    </div>
     <hr />
-    <h3>Products</h3>
+    <h3 >Products</h3>
     <div>
-        @foreach (var prod in @Model.ProductList)
+        @foreach (var prod in Model.ProductList)
         {
-            <h1>@prod.Name | Price: PHP @prod.Price</h1>
-            <p>Description: @prod.Description</p>
-            <p>Stocks: @prod.Stock</p>
-            <button onclick="location.href='/restaurant/order?restaurantId=@Model.Restaurant.RestaurantId&productId=@prod.ProductId&quantity=1'">Add to Cart (Pre-Order)</button>
+            <div class="product">
+                <h1>@prod.Name | Price: PHP @prod.Price</h1>
+                <p>Description: @prod.Description</p>
+                <p>Stocks: @prod.Stock</p>
+                <button class="add-to-cart-btn" onclick="location.href='/restaurant/order?restaurantId=@Model.Restaurant.RestaurantId&productId=@prod.ProductId&quantity=1'">Add to Cart</button>
+
+            </div>
         }
     </div>
 </div>
