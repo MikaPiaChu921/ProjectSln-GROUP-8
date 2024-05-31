@@ -240,3 +240,152 @@ body {
     margin-bottom: 20px;
     display: inline-block;
 }
+
+/*checkout*/
+
+.Checkcontainer {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%
+}
+
+/* Header Styles */
+.h1ch {
+    color: var(--primary-500);
+    font-size: 24px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Paragraph Styles */
+.pch {
+    color: var(--primary-600);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    color: var(--primary-500);
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="datetime"] {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--primary-300);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button Container Styles */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.buttonch {
+    background-color: var(--primary-500);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+    .buttonch:hover {
+        background-color: var(--primary-600);
+    }
+
+
+/* Link Styles */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--primary-700);
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/*Cart*/
+
+
+.Cartcontainer {
+    background-color: var(--primary-100);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+.orders-container {
+    margin-bottom: 20px;
+}
+
+.order {
+    background-color: var(--primary-200);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+    .order h1 {
+        color: var(--primary-500);
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .order p {
+        color: var(--primary-600);
+        margin-bottom: 0;
+    }
+
+/* Button Styles */
+.buttonc, .button1c {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto 20px; /* Center the button horizontally and add bottom margin */
+    text-align: center;
+    width: fit-content; /* Set width to fit the content */
+}
+
+.buttonc {
+    background-color: var(--primary-500);
+}
+
+.button1c {
+    background-color: var(--primary-700);
+}
+
+    .buttonc:hover, .button1c:hover {
+        background-color: var(--primary-600);
+    }

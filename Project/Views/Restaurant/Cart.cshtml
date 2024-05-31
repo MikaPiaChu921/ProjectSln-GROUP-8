@@ -1,17 +1,16 @@
 ﻿@model CartViewModel
-<div>
-    <a href="/restaurant/view/@Model.RestaurantId"><- Back</a>
-    <h1>Your orders</h1>
-    <div>
 
-        @foreach(var order in Model.Orders)
+<div class="Cartcontainer">
+    <a href="/restaurant/view/@Model.RestaurantId" class="button1c">Back</a>
+    <h1>Your Orders</h1>
+    <div class="orders-container">
+        @foreach (var order in Model.Orders)
         {
-            <div>
+            <div class="order">
                 <h1>@Model.Products.FirstOrDefault(p => p.ProductId == order.ProductId)?.Name</h1>
                 <p>Quantity: @order.Quantity</p>
             </div>
         }
-
-        <button onclick="location.href='/restaurant/checkout/@Model.RestaurantId'">Checkout</button>
     </div>
+    <button class="buttonc" onclick="location.href='/restaurant/checkout/@Model.RestaurantId'" style="align-content:center;">Checkout</button>
 </div>
