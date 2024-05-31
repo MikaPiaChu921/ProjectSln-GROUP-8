@@ -1,10 +1,12 @@
 ﻿@model ReferenceViewModel
 
-<div>
-    <div>
-        <h1>Reservation Complete :)</h1>
-        <p>See you there at @Model.RestaurantName (@Model.ReservationDate)</p>
-        <p>Reference Code @Model.ReferenceId</p>
-        <a href="/">Done</a>
-    </div>
+<div class="reservation-title">
+    <h1>Reservation Completed</h1>
+</div>
+<div class="Refcontainer">
+    <p class="pref">See you there at <strong>@Model.RestaurantName</strong></p>
+    <p class="pref" style="font-style: italic;">(@Model.ReservationDate)</p>
+    <p class="pref">Reference Code: <strong>@Model.ReferenceId</strong></p>
+    <br />
+    <button onclick="location.href='/'" class="buttonref">Done</button>
 </div>

@@ -235,10 +235,15 @@ body {
     }
 
 .back-btn {
-    color: var(--primary-500);
-    text-decoration: none;
-    margin-bottom: 20px;
-    display: inline-block;
+    background-color: var(--primary-500);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: left;
+    position: relative;
 }
 
 /*checkout*/
@@ -389,3 +394,57 @@ a {
     .buttonc:hover, .button1c:hover {
         background-color: var(--primary-600);
     }
+
+/*reference*/
+
+/* Container Styles */
+.Refcontainer {
+    background-color: var(--primary-200);
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Header Styles */
+.reservation-title {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    background: linear-gradient(45deg,#C4CFFD, #234A8C);
+    border-radius: 0 0 25px 25px;
+    text-align: center;
+    align-content: center;
+    
+}
+
+/* Content Styles */
+.pref {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Button Styles */
+.buttonref {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--primary-500);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .buttonref:hover {
+        background-color: var(--primary-400);
+    }
+
+/* Animation */
+.reservation-title {
+    animation: slideIn 1s ease-out forwards;
+}

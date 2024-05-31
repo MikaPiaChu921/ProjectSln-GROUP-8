@@ -2,8 +2,10 @@
 
 
 <div class="Rescontainer">
-    <a class="back-btn" href="/" style="text-align: left; display: block;">Back</a>
-    <div style="text-align: right; display: block;">
+    <div style="text-align: left; margin-top:10px;">
+        <button onclick="location.href='/'" class="back-btn">Back</button>
+    </div>
+    <div style="text-align: right; display: block; ">
         <button class="add-to-cart-btn" onclick="location.href='/restaurant/cart/@Model.Restaurant.RestaurantId'">My Orders (@Model.CartSize)</button>
     </div>
     <h1>@Model.Restaurant.Name</h1>
